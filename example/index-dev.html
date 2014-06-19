@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>voxelboard [DEV]</title>
 
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/normalize.css/normalize.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href=".tmp/styles/main.css">
 </head>
 
@@ -21,12 +21,17 @@
 <!-- vendor libs -->
 <script type="text/javascript" src="vendor/angular/angular.js"></script>
 <script type="text/javascript" src="vendor/kineticjs/kinetic.js"></script>
+<script type="text/javascript" src="vendor/lodash/dist/lodash.js"></script>
 
 <!--voxelboard -->
-    <!-- core -->
+    <!-- directives -->
     <script type="text/javascript" src="app/voxelboard/vxlbrdModule.js"></script>
     <script type="text/javascript" src="app/voxelboard/vxlbrdDirective.js"></script>
-    <script type="text/javascript" src="app/voxelboard/stageDirective.js"></script>
+    <script type="text/javascript" src="app/voxelboard/boardDirective.js"></script>
+    <script type="text/javascript" src="app/voxelboard/kineticDirective.js"></script>
+    <!-- services -->
+    <script type="text/javascript" src="app/voxelboard/Capturer.js"></script>
+    <script type="text/javascript" src="app/voxelboard/Distributor.js"></script>
     <!-- utils -->
     <script type="text/javascript" src="app/voxelboard/utils/Logger.js"></script>
     <script type="text/javascript" src="app/voxelboard/utils/UUID.js"></script>
